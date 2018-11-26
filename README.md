@@ -1,5 +1,3 @@
-Performance Tuning
+The repository is a store of Linux performance related tuning documents found on various Internet sources.
 
-
-Following repositories is a store of performance related tuning documents.
 
