@@ -1,0 +1,14 @@
+overcommit_memory
+=================
+
+Defines the conditions that determine whether a large memory request is accepted or denied.
+
+The default value is 0. By default, the kernel performs heuristic memory overcommit handling by estimating the amount of memory available and failing requests that are too large. However, since memory is allocated using a heuristic rather than a precise algorithm, overloading memory is possible with this setting.
+   
+
+When this parameter is set to 1, the kernel performs no memory overcommit handling. This increases the possibility of memory overload, but improves performance for memory-intensive tasks.
+
+
+
+When this parameter is set to 2, the kernel denies requests for memory equal to or larger than the sum of total available swap space and the percentage of physical RAM specified in overcommit_ratio. This reduces the risk of overcommitting memory, but is recommended only for systems with swap areas larger than their physical memory.
+ 
